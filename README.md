@@ -1,6 +1,6 @@
 # Finder7
 
-A small, native 7-Zip GUI for macOS, built with SwiftUI around the official
+A lightweight native 7-Zip GUI for macOS, built with SwiftUI around the official
 `7zz` engine.
 
 ![Finder7 compressing files](Docs/screenshot.png)
@@ -47,7 +47,7 @@ prebuilt universal binary first:
 ```
 
 The script downloads the arm64 and x86_64 tarballs, verifies their SHA-256
-digests, checks the banner and licenses, and writes the ignored `Vendor/7zz`.
+digests, checks the banner and licenses, and writes to `Vendor/7zz`.
 Then build, sign and smoke-test the app:
 
 ```bash
@@ -69,10 +69,6 @@ file associations, so LaunchServices registers it in a stable location.
 
 - The Finder actions live under **Services**, the supported macOS route for
   acting on any Finder selection without a sandboxed Finder Sync extension.
-- File associations use the deprecated, unsandboxed-only LaunchServices API.
-  This app is not sandboxed and is not prepared for the Mac App Store.
-- Ad-hoc signed builds show a Gatekeeper warning on other Macs; Developer ID
-  signing and notarization are left to the distributor.
 
 ## License
 

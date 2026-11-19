@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-label="Finder7">
+  <title>Finder7</title>
+  <rect width="36" height="36" rx="8.16" fill="#5144E5"/>
+  <g transform="translate(-6.76 -8.33) scale(.39)">
+    <path d="M98 32 95 52 55 103 39 91 70 51Z" fill="#D8CEFF"/>
+    <path d="M98 32 95 52 55 103 49 98Z" fill="#A998FA"/>
+    <path d="M29 32H98L77 51H29Z" fill="#FFFCFF"/>
+    <path d="M98 32 95 52 77 51Z" fill="#B5A3FF"/>
+  </g>
+</svg>
