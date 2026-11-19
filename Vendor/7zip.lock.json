@@ -1,0 +1,30 @@
+{
+  "version": "26.06",
+  "tag": "26.06",
+  "repo": "https://github.com/ip7z/7zip",
+  "source": "official-binary",
+  "assets": {
+    "arm64": {
+      "name": "7z2606-mac.tar.xz",
+      "url": "https://github.com/ip7z/7zip/releases/download/26.06/7z2606-mac.tar.xz",
+      "sha256": "b6f17920b4240940461dac8ef4009891881ac44d2a5ead625ede2ec8472185dd",
+      "minimumMacOS": "11.0"
+    },
+    "x86_64": {
+      "name": "7z2606-mac-x64.tar.xz",
+      "url": "https://github.com/ip7z/7zip/releases/download/26.06/7z2606-mac-x64.tar.xz",
+      "sha256": "3af68b124052da7fc2a246c96b0bea6a68bfee389baa788f4cead1a133445586",
+      "minimumMacOS": "10.15"
+    }
+  },
+  "tarballSha256": {
+    "7z2606-mac.tar.xz": "b6f17920b4240940461dac8ef4009891881ac44d2a5ead625ede2ec8472185dd",
+    "7z2606-mac-x64.tar.xz": "3af68b124052da7fc2a246c96b0bea6a68bfee389baa788f4cead1a133445586"
+  },
+  "engine": "Vendor/7zz",
+  "engineSha256": "b190ccc5220ac0f77fd739bde72639ef6dcd0a4644e56729d70b850a017aa74d",
+  "licenseSha256": "1790374e5352329cedb46ee3808930a88e9ca2f08b82b10fcf5cf605d2c301b1",
+  "unrarLicenseSha256": "17bd9fa4399092c777536fff045b41df76ec9d2ac4c9b8e7345d3b8b6ccc7976",
+  "licenseSource": "official-tarball",
+  "builtAt": "2026-11-19T01:23:45Z"
+}

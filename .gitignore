@@ -1,0 +1,15 @@
+# Build output
+.build/
+dist/
+.swiftpm/
+
+# macOS / Xcode noise
+.DS_Store
+*.xcuserstate
+
+# The 7-Zip engine is not bundled. Fetch it with Scripts/fetch-engine.sh.
+Vendor/7zz
+Vendor/7zip-src/
+
+# Local archive of removed docs, brand sources, maintainer scripts and plans.
+/archive/

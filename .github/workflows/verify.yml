@@ -1,0 +1,36 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch the 7-Zip engine
+        run: ./Scripts/fetch-engine.sh
+
+      - name: Run Swift unit tests
+        run: swift test --disable-sandbox
+
+      - name: Build app
+        run: ./Scripts/build-app.sh
+
+      - name: Verify engine, licenses and app
+        run: ./Scripts/check-engine.sh
+
+      - name: Self-update integration test
+        run: ./Scripts/test-self-update.sh
+
+      - name: Upload app
+        uses: actions/upload-artifact@v4
+        with:
+          name: Finder7-app
+          path: dist/*.zip
+          if-no-files-found: error
